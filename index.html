@@ -1,0 +1,214 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Academic website of Dr. Aiswaria K. — ocean engineering, marine hydrodynamics, wave energy conversion and offshore renewable energy.">
+  <title>Dr. Aiswaria K. | Ocean Engineering</title>
+  <style>
+    :root {
+      --navy: #173653;
+      --blue: #287c91;
+      --ink: #263746;
+      --muted: #657586;
+      --paper: #ffffff;
+      --soft: #f2f6f8;
+      --line: #dfe7ec;
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      color: var(--ink);
+      background: var(--paper);
+      line-height: 1.7;
+    }
+    a { color: var(--blue); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .wrap { width: min(1060px, 90%); margin: auto; }
+    header {
+      background: var(--paper);
+      border-bottom: 1px solid var(--line);
+      position: sticky;
+      top: 0;
+      z-index: 5;
+    }
+    nav {
+      min-height: 68px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+    }
+    .brand { font-weight: 700; color: var(--navy); font-size: 1.08rem; }
+    .navlinks { display: flex; flex-wrap: wrap; gap: 20px; font-size: .92rem; }
+    .navlinks a { color: var(--ink); }
+    .hero { background: var(--soft); padding: 82px 0 76px; }
+    .hero h1 {
+      color: var(--navy);
+      font-size: clamp(2.2rem, 5vw, 3.5rem);
+      line-height: 1.15;
+      margin: 0 0 14px;
+      letter-spacing: -1px;
+    }
+    .eyebrow {
+      color: var(--blue);
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      font-size: .8rem;
+      font-weight: 700;
+    }
+    .subtitle { font-size: 1.18rem; color: var(--muted); margin: 0 0 20px; }
+    .hero p { max-width: 760px; }
+    .actions { display: flex; gap: 12px; flex-wrap: wrap; margin-top: 26px; }
+    .btn {
+      display: inline-block; padding: 10px 18px; border-radius: 5px;
+      background: var(--navy); color: white; font-weight: 600;
+    }
+    .btn.secondary { background: transparent; color: var(--navy); border: 1px solid var(--navy); }
+    section { padding: 58px 0; scroll-margin-top: 76px; }
+    section.alt { background: var(--soft); }
+    h2 { color: var(--navy); font-size: 1.8rem; margin: 0 0 20px; }
+    h3 { color: var(--navy); margin-bottom: 8px; }
+    .grid { display: grid; grid-template-columns: repeat(2, minmax(0,1fr)); gap: 20px; }
+    .card {
+      border: 1px solid var(--line); border-radius: 9px; padding: 22px;
+      background: white;
+    }
+    .card p { margin-bottom: 0; }
+    .tag {
+      display: inline-block; background: #e5f0f3; color: var(--navy);
+      padding: 4px 9px; margin: 4px 4px 0 0; border-radius: 4px; font-size: .86rem;
+    }
+    .note { color: var(--muted); font-size: .94rem; }
+    footer { background: var(--navy); color: white; padding: 28px 0; }
+    footer a { color: #d5edf4; }
+    @media (max-width: 650px) {
+      nav { align-items: flex-start; flex-direction: column; padding: 15px 0; }
+      .navlinks { gap: 12px; }
+      .hero { padding: 55px 0; }
+      .grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav class="wrap">
+      <a class="brand" href="#home">Dr. Aiswaria K.</a>
+      <div class="navlinks">
+        <a href="#about">About</a>
+        <a href="#research">Research</a>
+        <a href="#publications">Publications</a>
+        <a href="#teaching">Teaching</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="wrap">
+        <div class="eyebrow">Academic Profile · Ocean Engineering</div>
+        <h1>Dr. Aiswaria K.</h1>
+        <p class="subtitle">Postdoctoral Researcher · Ocean Engineering · Marine Renewable Energy</p>
+        <p>
+          My research interests span marine hydrodynamics, wave energy conversion,
+          offshore structures and ocean processes. I work across experimental and
+          numerical approaches to understand fluid–structure interactions and
+          advance research in ocean and offshore engineering.
+        </p>
+        <div class="actions">
+          <a class="btn" href="#research">Explore my research</a>
+          <a class="btn secondary" href="#contact">Get in touch</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="about">
+      <div class="wrap">
+        <h2>About Me</h2>
+        <p>
+          I am an ocean engineering researcher with a background in civil
+          engineering and offshore structures. My doctoral research at the
+          Indian Institute of Technology Bombay investigated wave energy
+          enhancement using a point absorber integrated with a chambered
+          breakwater. My broader interests include marine renewable energy,
+          wave–structure interaction and the hydrodynamics of offshore systems.
+        </p>
+        <p>
+          My current research also engages with upper-ocean mixing, transport
+          processes and biogeochemical dynamics. I am interested in combining
+          rigorous engineering analysis with collaborative research to address
+          challenges in ocean and offshore environments.
+        </p>
+      </div>
+    </section>
+
+    <section class="alt" id="research">
+      <div class="wrap">
+        <h2>Research Interests</h2>
+        <div class="grid">
+          <article class="card">
+            <h3>Marine Renewable Energy</h3>
+            <p>Wave energy converters, point absorbers, hybrid wave-energy systems and offshore renewable energy.</p>
+          </article>
+          <article class="card">
+            <h3>Offshore Structures</h3>
+            <p>Marine hydrodynamics, wave–structure interaction, floating systems and structural response in waves.</p>
+          </article>
+          <article class="card">
+            <h3>Experimental and Numerical Modelling</h3>
+            <p>Physical model experiments, motion tracking, computational fluid dynamics and hydrodynamic analysis.</p>
+          </article>
+          <article class="card">
+            <h3>Ocean Dynamics</h3>
+            <p>Upper-ocean turbulence, transport and mixing, and their influence on biogeochemical processes.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="publications">
+      <div class="wrap">
+        <h2>Selected Publications</h2>
+        <p class="note">
+          Add your verified publication titles, journal details and DOI links here.
+          We will organise this section in the next stages.
+        </p>
+      </div>
+    </section>
+
+    <section class="alt" id="teaching">
+      <div class="wrap">
+        <h2>Teaching</h2>
+        <p>
+          My teaching experience includes undergraduate and postgraduate civil
+          engineering subjects, including Engineering Mechanics, Strength of
+          Materials, Fluid Mechanics, Hydraulics and Water Resources, and
+          ocean and offshore engineering topics.
+        </p>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="wrap">
+        <h2>Contact</h2>
+        <p>
+          I welcome academic discussions and research collaborations in ocean
+          engineering, marine renewable energy and related fields.
+        </p>
+        <p> Email: <span class="note">Add your preferred professional email address.</span></p>
+        <p class="note">Academic profiles: Add your ORCID, Google Scholar and LinkedIn links.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap">
+      <p>© Dr. Aiswaria K. · Academic Website</p>
+    </div>
+  </footer>
+</body>
+</html>
